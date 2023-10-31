@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +22,49 @@ export const HomeMainTitle = (props) => {
       }
     });
   }, []);
+
+  //media query for dynamic logo conditional on screen size
+  function useMediaQuery(queries) {
+    const [matches, setMatches] = useState(
+      queries.map((q) => window.matchMedia(q).matches)
+    );
+
+    useEffect(() => {
+      const mediaQueryLists = queries.map((q) => window.matchMedia(q));
+
+      const listeners = mediaQueryLists.map((mql, index) => {
+        return () =>
+          setMatches((prev) => {
+            // Copy the previous state
+            const newState = [...prev];
+            // Update only the index that has changed
+            newState[index] = mql.matches;
+            return newState;
+          });
+      });
+
+      // Add listeners for each query
+      mediaQueryLists.forEach((mql, index) =>
+        mql.addListener(listeners[index])
+      );
+
+      return () => {
+        // Cleanup listeners on component unmount
+        mediaQueryLists.forEach((mql, index) =>
+          mql.removeListener(listeners[index])
+        );
+      };
+    }, [queries]);
+
+    return matches;
+  }
+
+  //params for media query
+  const [isLargeScreen, isMediumScreen] = useMediaQuery([
+    '(min-width: 800px)',
+    '(min-width: 500px)',
+  ]);
+
   return (
     <div className='main-banner'>
       <div className='item'>
@@ -30,11 +73,20 @@ export const HomeMainTitle = (props) => {
           className='slide d-flex justify-content-center align-items-center home-bg-img'>
           <div className='bg-shade'></div>
           <div className='info text-center'>
-            <img
-              src={graipfrutLogo}
-              alt='graipfrut-logo'
-              style={{ maxWidth: '400px' }}
-            />
+            {isLargeScreen ? (
+              <img
+                src={graipfrutLogo}
+                alt='graipfrut-logo'
+                style={{ maxWidth: '400px' }}
+              />
+            ) : (
+              <img
+                src={graipfrutLogo}
+                alt='graipfrut-logo'
+                style={{ maxWidth: '200px' }}
+              />
+            )}
+
             <h1
               data-aos='fade-up'
               data-aos-delay='50'
