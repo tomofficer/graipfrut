@@ -78,7 +78,7 @@ const Home = (data) => {
   ]);
 
   const [mainTitle] = useState({
-    title: 'Web Experts',
+    title: 'Modern Web Experts',
     paragraph:
       "We're a forward-thinking Web Development Agency that leverages the power of AI to provide dynamic web solutions unique to your business needs, delivering superior websites, webshops, and mobile apps.",
   });

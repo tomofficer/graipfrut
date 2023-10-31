@@ -22,39 +22,21 @@ const About = () => {
   const [services] = useState([
     {
       id: 1,
-      title: 'Contrary to popular belief',
+      title: 'Our Mission',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Our mission is to design and develop modern, elegant websites that not only dazzle visually but also perform brilliantly. We implement AI solutions that streamline processes, enhance efficiency, and ultimately save our clients money.',
     },
     {
       id: 2,
-      title: 'Contrary to popular belief',
+      title: 'Our Vision',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Partner with us to build your online presence. Our vision drives us to offer a comprehensive range of services, all rooted in our commitment to crafting digital excellence and helping you thrive in the digital landscape.',
     },
     {
       id: 3,
-      title: 'Contrary to popular belief',
+      title: 'Our Journey',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    },
-    {
-      id: 4,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    },
-    {
-      id: 5,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    },
-    {
-      id: 6,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "At Graipfrüt, our commitment is unwavering, and we're dedicated to delivering high-quality websites and software that exceed your expectations. Ready to start your journey? Schedule your free consultation using the link below now!",
     },
   ]);
 
@@ -64,6 +46,38 @@ const About = () => {
       setWindowTop(window.top.scrollY);
     });
   }, []);
+
+  //inline hover state
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter1 = () => {
+    setIsHovered1(true);
+  };
+
+  const handleMouseLeave1 = () => {
+    setIsHovered1(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
+
+  const divStyle1 = {
+    backgroundColor: isHovered1 ? 'black' : 'white',
+    color: isHovered1 ? 'white' : 'black',
+    border: '3px solid black',
+  };
+
+  const divStyle2 = {
+    backgroundColor: isHovered2 ? 'black' : 'white',
+    color: isHovered2 ? 'white' : 'black',
+    border: 'none',
+  };
 
   return (
     <>
@@ -77,7 +91,7 @@ const About = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/about/our-mision-2.jpg')}
+                src={require('../assets/img/about/graipfrut-hero2.jpg')}
                 className='img-fluid'
                 alt=''
               />
@@ -92,21 +106,23 @@ const About = () => {
               <div className='ctn-box'>
                 <div className='sec-title line-left'>
                   <h2 data-aos='fade-down' data-aos-delay='50'>
-                    Lorem Ipsum.
+                    About Us
                   </h2>
                 </div>
                 <div className='sub-title'>
                   <h3 data-aos='fade-down' data-aos-delay='50'>
-                    Lorem Ipsum is simply
+                    Our Mission. Our Vision. Our Journey
                   </h3>
                 </div>
                 <p data-aos='fade-up' data-aos-delay='50'>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s. Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s.
+                  We are an AI-driven web development agency dedicated to
+                  delivering digital excellence. We leverage the power of AI to
+                  create dynamic web solutions that not only enhance your online
+                  presence but also optimize conversions and boost ROI. With
+                  specialized teams in web development, app development,
+                  e-commerce development, and digital marketing, we are
+                  committed to surpassing expectations and maximizing your
+                  digital success.
                 </p>
               </div>
             </div>
@@ -118,14 +134,16 @@ const About = () => {
         <div className='container wd-container'>
           <div className='sec-title text-center'>
             <h2 data-aos='fade-down' data-aos-delay='50'>
-              What We Do.
+              What We Do
             </h2>
-            <p data-aos='fade-up' data-aos-delay='50'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
-              <br /> Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.
+            <p
+              data-aos='fade-up'
+              data-aos-delay='50'
+              style={{ padding: '0px 200px' }}>
+              At Graipfrut, our expertise spans a wide spectrum of digital
+              services, from crafting visually stunning websites to developing
+              cutting-edge mobile apps. Discover how we can transform your ideas
+              into a digital empire.
             </p>
           </div>
           {services.map((service) => (
@@ -156,7 +174,10 @@ const About = () => {
                 to='/contact-us'
                 className='btn cta-black'
                 data-aos='fade-down'
-                data-aos-delay='50'>
+                data-aos-delay='50'
+                style={divStyle1}
+                onMouseEnter={handleMouseEnter1}
+                onMouseLeave={handleMouseLeave1}>
                 Start a Project
               </Link>
             </div>
@@ -168,19 +189,22 @@ const About = () => {
           <div className='box-container'>
             <div className='sec-title wt text-center'>
               <h2 data-aos='fade-down' data-aos-delay='50'>
-                Get Started
+                Have Questions?
               </h2>
               <p data-aos='fade-up' data-aos-delay='50'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                If you're curious about how we can help or have any questions
+                about our services, don't hesitate to contact us. We're
+                committed to delivering the information and support you need.
               </p>
               <Link
                 to='/contact-us'
                 data-aos='fade-down'
                 data-aos-delay='50'
-                className='btn cta-black-outline'>
-                Let’s Get Started
+                className='btn cta-black-outline'
+                style={divStyle2}
+                onMouseEnter={handleMouseEnter2}
+                onMouseLeave={handleMouseLeave2}>
+                Contact Us
               </Link>
             </div>
           </div>
