@@ -35,7 +35,13 @@ export const HomeMainTitle = (props) => {
               alt='graipfrut-logo'
               style={{ maxWidth: '400px' }}
             />
-            <h1 data-aos='fade-up' data-aos-delay='50'>
+            <h1
+              data-aos='fade-up'
+              data-aos-delay='50'
+              // style={{
+              //   color: '#FFDC4D',
+              // }}
+            >
               {props.data ? props.data.title : 'Loading'}
             </h1>
             <p
@@ -50,7 +56,7 @@ export const HomeMainTitle = (props) => {
                 className='btn cta-black-outline'
                 data-aos='fade-left'
                 data-aos-delay='50'>
-                <span>Go to</span>
+                <span>Get Started</span>
               </Link>
               <Link
                 to='/contact-us'

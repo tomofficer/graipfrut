@@ -370,11 +370,16 @@ p {
 .btn.cta-black-outline {
   color: var(--btn-txt-white);
   border-color: var(--btn-txt-white);
+  border: 2px solid white;
 }
 
 .btn.cta-black-outline:hover {
-  border: 1px solid var(--btn-black);
-  background: var(--btn-black);
+  /* border: 1px solid var(--btn-black); */
+color: #FFDC4D;
+  border: 2px solid #FFDC4D;
+  /* background: var(--btn-black); */
+  background: none;
+  transform: scale(2);
 }
 
 .btn.cta-black {
