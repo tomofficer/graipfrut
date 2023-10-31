@@ -728,6 +728,11 @@ ul.menu .sub-menu > li > a {
   }
   ul.menu > li > a {
     color: #fff;
+    /* color: #FFDC4D; */
+  }
+  ul.menu > li > a:hover {
+    /* color: #fff; */
+    color: #FFDC4D;
   }
   ul.menu .sub-menu li a {
     color: #000000;

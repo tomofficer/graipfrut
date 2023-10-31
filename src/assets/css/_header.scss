@@ -279,6 +279,7 @@ ul.menu {
 	ul.menu {
 		&>li>a {
 			color: #fff;
+
 		}
 
 		.sub-menu {
@@ -318,7 +319,8 @@ ul.menu {
 
 	ul.menu {
 		&>li>a {
-			color: var(--font-stl-one);
+			// color: var(--font-stl-one);
+			color: #FFDC4D;
 		}
 
 		ul.sub-menu {
@@ -330,6 +332,7 @@ ul.menu {
 
 				a {
 					color: var(--font-stl-one);
+
 				}
 			}
 
