@@ -1,0 +1,45 @@
+.bgImg{
+    width: calc(100% - 15px);
+    height: calc(100% - 8px);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    background-image: linear-gradient(-45deg,#ff3b3b,#ffa219 85%);
+    opacity: .7;
+    z-index: -1;
+}
+  .get-started{
+    position: relative;
+    background:url('../img/about/get-started.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(20, 22, 24, 0.65);
+      z-index: 1;
+    }
+    .box-container{
+      max-width: 866px;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      }
+  }
+  .about_services {
+    border-top: 2px solid;
+      p {
+        font-size: 25px;
+        line-height: 35px;
+      }
+  }

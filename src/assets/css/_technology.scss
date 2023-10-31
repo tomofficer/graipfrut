@@ -1,0 +1,198 @@
+.get-started{
+    position: relative;
+    background:url('../img/about/get-started.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(20, 22, 24, 0.65);
+      z-index: 1;
+    }
+    .box-container{
+      max-width: 866px;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      }
+  }
+  .technology {
+    overflow: hidden;
+  }
+.mobile-app-developement{
+  .technology-tools {
+    width: 50%;
+    .technology-item {
+      width: 96%;
+      text-align: left;
+      padding: 30px;
+      img {
+        margin-bottom: 15px;
+        width: 80px;
+      }
+      .technology-name {
+          font-size: 20px;
+          line-height: 28px;
+          color: var(--font-stl-one);
+          font-weight: 600;
+          margin-bottom: 18px;
+      }
+      .text {
+        color:var(--font-stl-one);
+      }
+    }
+  }
+  .mobiles-animation {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .mobile-tech-img {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+          figure.mobile-img {
+              position: absolute;
+              &.one {
+                left: 33%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                img {
+                width: 100%;
+                }
+              }
+              &.two {
+                width: 50%;
+                left: 73%;
+                top: 52%;
+                transform: translate(-50%, -50%);
+                img {
+                width: 100%;
+                }
+              }        
+          }
+    }
+  }
+}
+
+  .technology-tools {
+    .technology-item {
+        width: 46%;
+        text-align:center;
+        transition: all .3s ease-in-out;
+        // border: 0px solid;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 5px;
+        box-shadow: 0px 0px 7px 5px #e1e1e1;
+        min-width: 150px;
+        color: var(--font-stl-one);
+         &:hover {
+            img {
+              transform: scale(1.1);
+              transition: all .3s ease-in-out;
+          }
+         }
+        img {
+            width: 80px;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+        }
+        .technology-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: var(--font-stl-one);;
+        }
+    }
+  }
+  .technology-title {
+      font-size: 35px;
+  }
+  .mainImg {
+    height: 100%;
+    overflow: hidden;
+    padding: 30% 37%;
+    &.firstImg {
+      background:url('../img/technology/technology-child-1.jpg');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    &.secondImg {
+      background:url('../img/technology/technology-child.jpg');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+}
+
+  @media screen and (max-width:480px) {
+    .mobile-app-developement{
+      .technology-tools {
+        width: 50%;
+        .technology-item {
+          padding: 15px;
+          img {
+            margin-bottom: 10px;
+            width: 50px;
+          }
+          .technology-name {
+              margin-bottom: 10px;
+          }
+        }
+      }
+      .mobiles-animation {
+      .mobile-tech-img {
+        figure.mobile-img {
+              &.one {
+                left: 35%;
+                width: 55%;
+              }
+      }
+    }
+  }
+    }
+    
+    .web-development {
+      .technology-tools {
+        .technology-item {
+          min-width: 130px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width:375px) {
+    .mobile-app-developement{
+      .image-section {
+        flex-direction: column;
+        .technology-tools {
+          width: 100%;
+          margin-top: 0 !important;
+          .technology-item {
+            padding: 15px;
+            img {
+              margin-bottom: 10px;
+              width: 50px;
+            }
+            .technology-name {
+                margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }

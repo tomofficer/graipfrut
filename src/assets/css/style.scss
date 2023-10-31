@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import "variable";
+@import "mixin";
+@import "base";
+@import "helper";
+@import "button";
+@import "title";
+@import "header";
+@import "footer";
+@import "home";
+@import "about";
+@import "pagetitle";
+@import "homemaintitle";
+@import "technology";
+@import "doWeWorks";
+@import "ourApproach";
+@import "whychooseus";
+@import "newHeader";
+
+ul.social {
+  li {
+    display: inline-block;
+    padding: 5px 5px;
+    svg {
+      width: 16px;
+      fill: #fff;
+    }
+  }
+
+  &.footer {
+    display: inline-flex;
+    a {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      border: 1px solid rgba(240, 240, 240, 0.7) !important;
+      svg {
+        width: 14px;
+        fill: rgba(240, 240, 240, 0.7) !important;
+      }
+
+      &:hover {
+        background: var(--w-color);
+        border-color: var(--w-color) !important;
+
+        svg {
+          fill: var(--m-color) !important;
+        }
+      }
+    }
+  }
+}
+
+/*services-single-box*/
+.srvs-single-box {
+  margin: 40px 0px;
+  .icon-box {
+    svg {
+      width: 64px;
+      height: 64px;
+      fill: var(--font-stl-one);
+    }
+  }
+  .ctn-box {
+    p {
+      line-height: 28px;
+      transition: all 0.3s ease-in-out;
+    }
+    .readmore {
+      display: inline-block;
+      span {
+        position: relative;
+        width: 18px;
+        height: 2px;
+        display: inline-block;
+        background: var(--font-stl-one);
+        transition: all 0.3s ease-in-out;
+        &:after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          left: 0;
+          right: 0;
+          background: var(--font-stl-one);
+          transform: rotate(90deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  &.stl-one {
+    text-align: center;
+    .icon-box {
+      margin-bottom: 15px;
+    }
+  }
+  &.stl-two {
+    .icon-box {
+      margin-bottom: 15px;
+    }
+  }
+  &.showMore {
+    .ctn-box {
+      .readmore {
+        span:after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+  &:not(.showMore) {
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+/*services-single-box*/
+
+/*bullet*/
+ul.bullet {
+  li {
+    position: relative;
+    padding-left: 15px;
+    color: var(--p-color);
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100px;
+      background: currentColor;
+    }
+  }
+}
+
+/*bullet*/

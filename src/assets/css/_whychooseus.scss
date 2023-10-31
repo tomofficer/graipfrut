@@ -1,0 +1,67 @@
+.accordionWcu {
+    .card {
+      border: 0;
+      border-radius: 0;
+      background-color: var(--bg-white-black-100);
+      &:not(:last-child){
+        margin: 0 0 5px;
+      }
+      .card-header {
+        border-bottom: 0px solid rgba(0, 0, 0, .125);
+        background-color: transparent;
+        margin-bottom: 0px !important;
+        padding: 12px 15px;
+        h3 {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          .icon-plus {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            min-width: 26px;
+            height: 26px;
+            position: relative;
+            color: var(--font-stl-one);
+            .icon {
+              display: inline-flex;
+              width: 20px;
+              height: 3px;
+              background: currentColor;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 20px;
+                height: 3px;
+                background: currentColor;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+          }
+          &.collapsed {
+            .icon-plus {
+              .icon {
+                &::after {
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+        }
+      }
+      .card-body {
+        p {
+          display: block;
+          -webkit-line-clamp: initial;
+          -webkit-box-orient: initial;
+          overflow: visible;
+        }
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12a352f8.css",
+    "main.js": "/static/js/main.a40c1b3a.js",
+    "static/js/787.faeb8713.chunk.js": "/static/js/787.faeb8713.chunk.js",
+    "static/media/home-bg.jpg": "/static/media/home-bg.03aed0cad60622037059.jpg",
+    "static/media/get-started.jpg": "/static/media/get-started.8a77990f5c83d98c9e78.jpg",
+    "static/media/lm-home-services.jpg": "/static/media/lm-home-services.8a77990f5c83d98c9e78.jpg",
+    "static/media/our-mision-2.jpg": "/static/media/our-mision-2.8a77990f5c83d98c9e78.jpg",
+    "static/media/passion-bg.jpg": "/static/media/passion-bg.8a77990f5c83d98c9e78.jpg",
+    "static/media/technology-child-1.jpg": "/static/media/technology-child-1.8a77990f5c83d98c9e78.jpg",
+    "static/media/technology-child.jpg": "/static/media/technology-child.8213a880d7080b5a77d4.jpg",
+    "static/media/php.png": "/static/media/php.4fc8337f0df60ee345ab.png",
+    "static/media/footer-logo.svg": "/static/media/footer-logo.6c88996a3639f1e07e90c20f48092fc8.svg",
+    "static/media/laravel.png": "/static/media/laravel.01e52f371b297a799c39.png",
+    "static/media/node.webp": "/static/media/node.5abe0ba6ae525f68f9f1.webp",
+    "static/media/logo.svg": "/static/media/logo.401e636c6773cf4c66f45d41bd938e23.svg",
+    "static/media/reactjs.png": "/static/media/reactjs.154f93e2a688d355c0db.png",
+    "static/media/Icon.svg": "/static/media/Icon.15256b777c9f327a270e1794d5968813.svg",
+    "static/media/contect.svg": "/static/media/contect.63a5be06c26c762a15c78903d25b228e.svg",
+    "static/media/location.svg": "/static/media/location.879cab4709cab63bbe6346902ab5eae4.svg",
+    "index.html": "/index.html",
+    "static/media/ins.svg": "/static/media/ins.1fc0a67510558c7ed4649a6d9d81b1f4.svg",
+    "static/media/tw.svg": "/static/media/tw.668220f1b6fdf39e0e7f63594c0e6ac9.svg",
+    "static/media/newsLater.svg": "/static/media/newsLater.1e18034ea867e436ee004a240ad232c3.svg",
+    "static/media/in.svg": "/static/media/in.7f750cdedda1036a114e5bfff214c84c.svg",
+    "static/media/grapfrut.svg": "/static/media/grapfrut.5216ad08b52cde2f21a4d097578f69f5.svg",
+    "static/media/fb.svg": "/static/media/fb.f0cf1a2abf579f56d37e37ac2e7e31b9.svg",
+    "main.12a352f8.css.map": "/static/css/main.12a352f8.css.map",
+    "main.a40c1b3a.js.map": "/static/js/main.a40c1b3a.js.map",
+    "787.faeb8713.chunk.js.map": "/static/js/787.faeb8713.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12a352f8.css",
+    "static/js/main.a40c1b3a.js"
+  ]
+}

@@ -1,0 +1,58 @@
+.ourapproach {
+    padding-bottom: 3.5rem;
+    .ul-list{
+      > ul{
+        margin: 0 -20px -30px;
+        > li{
+          padding: 0 20px 30px;
+        }
+      }
+    }
+    .opproach {
+      height: 100%;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px;
+      min-width: 150px;
+      color: var(--font-stl-one);
+       &:hover {
+        border-top-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+        // background-color: beige;
+       }
+      .opproach-count {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid;
+        color: var(--font-stl-one);
+      }
+      .approach-title {
+        font-size: 1.7rem;
+        font-weight: 600;
+        padding: 1.5rem 0 1rem;
+        line-height: 1.1;
+        color: var(--font-stl-one);
+        position: relative;
+        transition: all .3s ease;
+        overflow: hidden;
+      }
+      .approach-des {
+        margin-bottom: 1.5rem;
+        color: var(--font-stl-one);
+      }
+    }
+    @media screen and (max-width:767px) {
+      .opproach {
+        .opproach-count {
+          font-size: 2.2rem;
+        }
+        .approach-title{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
