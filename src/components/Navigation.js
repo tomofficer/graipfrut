@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../assets/logo/grapfrut.svg';
-import logo from '../assets/logo/graipfrut-logo-navigation.png';
+
 import logoAlt from '../assets/logo/graipfrut-logo-navigation-alt-white.png';
 import { ReactComponent as Twitter } from '../assets/social/tw.svg';
 import { ReactComponent as Linkedin } from '../assets/social/in.svg';

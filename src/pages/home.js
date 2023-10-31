@@ -14,66 +14,73 @@ const Home = (data) => {
   const [homeServices] = useState([
     {
       id: 1,
-      title: 'Contrary to popular belief',
+      title: 'Web Development',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Crafting Dynamic & Responsive Websites that Speak Your Brand Language.',
     },
     {
       id: 2,
-      title: 'Contrary to popular belief',
+      title: 'App Development',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Developing Intuitive and User-friendly Apps that Resonate with Your Audience.',
     },
     {
       id: 3,
-      title: 'Contrary to popular belief',
+      title: 'E-commerce Dev',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Robust E-commerce Solutions that Amplify User Engagement and Skyrocket Sales.',
     },
     {
       id: 4,
-      title: 'Contrary to popular belief',
+      title: 'Wordpress Development',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Custom Wordpress solutions precisely tailored to your unique business requirements.',
     },
     {
       id: 5,
-      title: 'Contrary to popular belief',
+      title: 'Digital Marketing',
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    },
-    {
-      id: 6,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        'Elevating Your Brand with Strategic Digital Marketing for Optimal Online Visibility.',
     },
   ]);
+
   const [HomeOurServices] = useState([
     {
       id: 7,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: 'Frontend Development',
+      description: 'React, Angular, Vue.js, Typescript',
     },
     {
       id: 8,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: 'Backend Development',
+      description: 'Node.js, PHP, Python, .Net',
     },
     {
       id: 9,
-      title: 'Contrary to popular belief',
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: 'App Development',
+      description: 'iOs, Android, React Native, Flutter',
+    },
+    {
+      id: 10,
+      title: 'E-Commerce Dev',
+      description: 'Wordpress, Magento, Shopify',
+    },
+    {
+      id: 11,
+      title: 'UI/UX Design',
+      description: 'Figma, Webflow, Adobe Xd',
+    },
+    {
+      id: 12,
+      title: 'Database',
+      description: 'Firebase, MySQL, MsSQL, PostgreSQL',
     },
   ]);
 
   const [mainTitle] = useState({
     title: 'Modern Web Experts',
     paragraph:
-      'Graipfrüt is your partner in digital innovation, leveraging the power of AI and expertise in modern web development to craft unique, impactful experiences that propel your brand to new digital heights.',
+      "We're a forward-thinking Web Development Agency that leverages the power of AI to provide expert web solutions unique to your business needs, delivering superior websites, webshops, and mobile apps.",
   });
 
   useEffect(() => {
@@ -93,17 +100,17 @@ const Home = (data) => {
         <div className='container wd-container'>
           <div className='sec-title text-center'>
             <h2 data-aos='fade-left' data-aos-delay='50'>
-              About Grapfrut
+              Welcome To Graipfrut
             </h2>
             <div
               className='sub-text'
               data-aos='fade-right'
               data-aos-delay='200'>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                <br /> Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s.
+                Partner with us and explore a world of digital innovation as we
+                lead you through
+                <br /> our creative journey of web development, app design, and
+                digital marketing expertise.
               </p>
             </div>
           </div>
@@ -138,13 +145,14 @@ const Home = (data) => {
         <div className='container'>
           <div className='sec-title text-center'>
             <h2 data-aos='fade-right' data-aos-delay='50'>
-              Lorem Ipsum has been
+              Shape Your Digital Future With{' '}
+              <span style={{ color: '#FFDC4D' }}>Graipfrut</span>
             </h2>
             <p data-aos='fade-left' data-aos-delay='50'>
-              <small>
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s.
-              </small>
+              {/* <small> */}
+              Unlock the Power of Advanced AI to Craft Engaging, High-Impact
+              Online Platforms that Drive Revenue.
+              {/* </small> */}
             </p>
           </div>
         </div>
@@ -154,15 +162,15 @@ const Home = (data) => {
         <div className='container wd-container'>
           <div className='sec-title text-center'>
             <h2 data-aos='fade-down' data-aos-delay='50'>
-              Our Services.
+              Our Services
             </h2>
             <div className='sub-text max-800 mx-auto'>
               <p data-aos='fade-up' data-aos-delay='50'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
-                <br /> It was popularised in the 1960s with the release of
-                Letraset sheets.
+                Unleash the power of Graipfrüt! Our diverse services, ranging
+                from Web and App Development to E-commerce, Digital Marketing &
+                SEO, Lifetime Maintenance & Support, and Branding & Design, are
+                tailored to propel your brand to new heights in the digital
+                realm.
               </p>
             </div>
           </div>
@@ -172,7 +180,7 @@ const Home = (data) => {
               data-aos='fade-down'
               data-aos-delay='50'>
               <img
-                src={require('../assets/img/lm-home-services.jpg')}
+                src={require('../assets/img/idea1.jpg')}
                 className='img-fluid'
                 style={{ width: '100%' }}
                 alt=''
@@ -207,12 +215,17 @@ const Home = (data) => {
       <section className='lm-hm-talk'>
         <div className='container text-center'>
           <h3 className='h2 pt-3'>
-            Hire{' '}
+            We've got you covered:
+            <br />{' '}
             <Typed
               strings={[
-                'Vue Js Developer',
-                'React Js Developer',
-                'Angular Js Developer',
+                'Web Development',
+                'Mobile App Development',
+                'E-Commerce Development',
+                'Frontend Development',
+                'Backend Development',
+                'UI/UX Design',
+                'SEO & Digital Marketing',
               ]}
               typeSpeed={40}
               backSpeed={20}
