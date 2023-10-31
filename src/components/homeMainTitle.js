@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import {
-  Link
-} from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import graipfrutLogo from '../assets/img/home/graipfrut-logo-yellow.png';
+
 export const HomeMainTitle = (props) => {
   useEffect(() => {
     AOS.init({
@@ -12,38 +12,58 @@ export const HomeMainTitle = (props) => {
     });
   }, []);
   useEffect(() => {
-    const parallax = document.getElementById("parallax");
+    const parallax = document.getElementById('parallax');
 
     // Parallax Effect for DIV 1
-    window.addEventListener("scroll", function () {
+    window.addEventListener('scroll', function () {
       let offset = window.pageYOffset;
-      if(parallax !== null) {
-
-        parallax.style.backgroundPositionY = offset * 0.7 + "px";
+      if (parallax !== null) {
+        parallax.style.backgroundPositionY = offset * 0.7 + 'px';
       }
     });
-  },[])
+  }, []);
   return (
-
-<div className="main-banner">
-     <div className="item">
-         <div id="parallax" className="slide d-flex justify-content-center align-items-center home-bg-img">
-             <div className="bg-shade"></div>
-             <div className="info text-center">
-                 <h1 data-aos="fade-up" data-aos-delay="50">{props.data ? props.data.title : "Loading"}</h1>
-                 <p className="mr-auto ml-auto" data-aos="fade-down" data-aos-delay="50">{props.data ? props.data.paragraph : "Loading"}</p>
-                 <div className="cta-btn-wrap flex-box d-flex align-items-center justify-content-center">
-                     <Link to="/" className="btn cta-black-outline" data-aos="fade-left" data-aos-delay="50"><span>Go to</span></Link>
-                     <Link to="/contact-us" className="btn cta-black-outline" data-aos="fade-right" data-aos-delay="50"><span>Contact Us</span></Link>
-                 </div>
-             </div>
-         </div>
-     </div>
-  </div>
-
-
-
-
+    <div className='main-banner'>
+      <div className='item'>
+        <div
+          id='parallax'
+          className='slide d-flex justify-content-center align-items-center home-bg-img'>
+          <div className='bg-shade'></div>
+          <div className='info text-center'>
+            <img
+              src={graipfrutLogo}
+              alt='graipfrut-logo'
+              style={{ maxWidth: '400px' }}
+            />
+            <h1 data-aos='fade-up' data-aos-delay='50'>
+              {props.data ? props.data.title : 'Loading'}
+            </h1>
+            <p
+              className='mr-auto ml-auto'
+              data-aos='fade-down'
+              data-aos-delay='50'>
+              {props.data ? props.data.paragraph : 'Loading'}
+            </p>
+            <div className='cta-btn-wrap flex-box d-flex align-items-center justify-content-center'>
+              <Link
+                to='/'
+                className='btn cta-black-outline'
+                data-aos='fade-left'
+                data-aos-delay='50'>
+                <span>Go to</span>
+              </Link>
+              <Link
+                to='/contact-us'
+                className='btn cta-black-outline'
+                data-aos='fade-right'
+                data-aos-delay='50'>
+                <span>Contact Us</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     // <header id="header">
     //   <div id="parallax" className="intro">
