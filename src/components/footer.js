@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className='desc light-txt' style={{ textAlign: 'center' }}>
                   Graipfrut Web Development
                   <br />
-                  Granby, CT 06035
+                  Hartford, CT 06101
                   <br />
                   USA
                 </div>

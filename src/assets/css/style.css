@@ -1216,7 +1216,7 @@ footer .copyright {
 
 .get-started {
   position: relative;
-  background: url("../img/about/get-started.jpg");
+  background: url("../img/home/graipfrutBg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1575,14 +1575,14 @@ footer .copyright {
 }
 
 .mainImg.firstImg {
-  background: url("../img/technology/technology-child-1.jpg");
+  background: url("../img/technology/technology3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .mainImg.secondImg {
-  background: url("../img/technology/technology-child.jpg");
+  background: url("../img/technology/technology5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
