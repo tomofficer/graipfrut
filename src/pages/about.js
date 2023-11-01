@@ -82,6 +82,24 @@ const About = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
+      <div className='container wd-container'>
+        <div
+          className='sec-title text-center'
+          data-aos='fade-down'
+          data-aos-delay='50'>
+          <h2>Partner With Graipfrut</h2>
+          <p>
+            Streamlining the Development Lifecycle : From Branding and Design to
+            Development and Marketing. <br />
+            We bring together the tools and technologies you need to plan,
+            design, develop, and manage your digital projects effectively.
+            {/* <br />
+              Partnering with Graipfrüt means having a dedicated team that
+              empowers your digital growth and helps you stay ahead in today's
+              fast-paced digital landscape. */}
+          </p>
+        </div>
+      </div>
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -184,6 +202,57 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section
+        className='our-mission section pt-100 pb-100'
+        style={{ overflow: 'hidden' }}>
+        <div className='container-fluid wd-container'>
+          <div className='row flex-md-row-reverse'>
+            <div className='col-lg-6 col-md-6 col-12 position-relative'>
+              <img
+                data-aos='fade-down'
+                data-aos-delay='50'
+                src={require('../assets/img/team2.png')}
+                className='img-fluid'
+                alt=''
+              />
+              {/* <div
+                className='bgImg'
+                style={{
+                  transform:
+                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
+                }}></div> */}
+            </div>
+            <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
+              <div className='ctn-box'>
+                <div className='sec-title line-left'>
+                  <h2 data-aos='fade-down' data-aos-delay='50'>
+                    Meet Our Team
+                  </h2>
+                </div>
+                <div className='sub-title'>
+                  <h3 data-aos='fade-down' data-aos-delay='50'>
+                    Developers On Call To Handle Any Project
+                  </h3>
+                </div>
+                <p data-aos='fade-up' data-aos-delay='50'>
+                  At Graipfrüt, our strength lies in our diverse team of
+                  developers, always on call to handle projects across a wide
+                  range of tech stacks. With an array of skills and expertise at
+                  our disposal, we're well-equipped to tackle any project, no
+                  matter the complexity or scope. From front-end wizards to
+                  back-end gurus, our dynamic team ensures that your project
+                  benefits from a wealth of knowledge and creativity. Whether
+                  it's web development, app development, e-commerce solutions,
+                  or digital marketing, our team is ready to make your vision a
+                  reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className='get-started section'>
         <div className='container d-flex align-items-center justify-content-center'>
           <div className='box-container'>
