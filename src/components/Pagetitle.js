@@ -17,7 +17,6 @@ const Pagetitle = (pageTile) => {
         </div> */}
         <img
           src={require('../assets/img/home/graipfrutBg.jpg')}
-          //   style={{ maxWidth: '100vw', zIndex: '-1' }}
           style={{
             position: 'absolute',
             top: 0,

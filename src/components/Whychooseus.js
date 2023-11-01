@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import webDev2 from '../assets/img/webdev2.jpg';
+import android2 from '../assets/img/android2.jpg';
 const Whychooseus = (commonWhyChoose) => {
   useEffect(() => {
     AOS.init({
@@ -16,7 +16,7 @@ const Whychooseus = (commonWhyChoose) => {
           <div className='col-lg-6 col-md-6 col-12'>
             <div className='img-box' data-aos='fade-up' data-aos-delay='50'>
               <img
-                src={webDev2}
+                src={android2}
                 // src={commonWhyChoose.commonWhyChoose.leftImg}
                 className='img-fluid'
                 alt=''
