@@ -43,37 +43,44 @@ const Footer = () => {
                   <h4 className='light-txt footer_title'>Contact details</h4>
                 </div>
                 <div className='desc light-txt' style={{ textAlign: 'center' }}>
-                  <Link to='' style={{ color: '#ffffff' }}>
+                  {/* <Link to='/contact' style={{ color: '#ffffff' }}>
                     graipfrut.com@gmail.com
                     <br />
                     (530) 925-9482
-                  </Link>
+                  </Link> */}
+                  <div
+                    className='desc light-txt'
+                    style={{ textAlign: 'center' }}>
+                    graipfrut.com@gmail.com
+                    <br />
+                    (530) 925-9482
+                  </div>
                 </div>
                 <div
                   className='desc light-txt'
                   style={{ textAlign: 'center', marginTop: '10px' }}>
-                  <Link to='#'>
+                  <Link to='www.twitter.com/graipfrut'>
                     <img
                       src={require('../assets/img/footer/twitter.png')}
                       alt='twitter'
                       style={{ width: '30px', margin: '5px' }}
                     />{' '}
                   </Link>
-                  <Link to='#'>
+                  <Link to='www.linkedin.com/company/graipfrut'>
                     <img
                       src={require('../assets/img/footer/linkedin.png')}
                       alt='linkedin'
                       style={{ width: '30px', margin: '5px' }}
                     />{' '}
                   </Link>
-                  <Link to='#'>
+                  <Link to='www.instagram.com/graipfrutco'>
                     <img
                       src={require('../assets/img/footer/instagram.png')}
-                      alt='instagram'
+                      alt='instagranm'
                       style={{ width: '30px', margin: '5px' }}
                     />{' '}
                   </Link>
-                  <Link to='#'>
+                  <Link to='www.facebook.com/graipfrut'>
                     <img
                       src={require('../assets/img/footer/facebook.png')}
                       alt='facebook'

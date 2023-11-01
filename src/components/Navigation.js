@@ -63,10 +63,8 @@ const Navigation = () => {
       <div className='container wd-container'>
         <div className='header-wrap d-flex flex-wrap align-items-center'>
           <div className='head-left'>
-            {/* UPDATE GRAIPFRUT LOGO HERE */}
             <div className='logo'>
               <Link to='/'>
-                {/* <Logo /> */}
                 <img src={logoAlt} alt='' style={{ maxWidth: '150px' }} />
               </Link>
             </div>
@@ -74,32 +72,32 @@ const Navigation = () => {
           <div className='head-right d-flex flex-wrap align-items-center'>
             <ul className='social'>
               <li>
-                <Link to=''>
-                  <Twitter />
-                </Link>
-              </li>
-              <li>
-                <Link to=''>
+                <Link to='www.linkedin.com/company/graipfrut'>
                   <Linkedin />
                 </Link>
               </li>
               <li>
-                <Link to=''>
+                <Link to='www.instagram.com/graipfrutco'>
                   <Instagram />
                 </Link>
               </li>
               <li>
-                <Link to=''>
+                <Link to='www.twitter.com/graipfrut'>
+                  <Twitter />
+                </Link>
+              </li>
+              <li>
+                <Link to='www.facebook.com/graipfrut'>
                   <Facebook />
                 </Link>
               </li>
             </ul>
 
-            <div className='btn-dark-light'>
+            {/* <div className='btn-dark-light'>
               <Link to='' onClick={() => toggleColor()}>
                 <Icon name='dark-light-icon' data={{ width: 25, height: 25 }} />
               </Link>
-            </div>
+            </div> */}
 
             <Link
               to=''
@@ -215,8 +213,7 @@ const Navigation = () => {
                   <Link to='/about'>About Us</Link>
                 </li>
                 <li onClick={() => toggleMenu()}>
-                  {/* <Link to="/contact-us">Contact Us</Link> */}
-                  <Link to='/'>Contact Us</Link>
+                  <Link to='/contact-us'>Contact Us</Link>
                 </li>
               </ul>
             </div>

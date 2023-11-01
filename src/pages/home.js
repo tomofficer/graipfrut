@@ -166,11 +166,9 @@ const Home = (data) => {
             </h2>
             <div className='sub-text max-800 mx-auto'>
               <p data-aos='fade-up' data-aos-delay='50'>
-                Unleash the power of Graipfrüt! Our diverse services, ranging
-                from Web and App Development to E-commerce, Digital Marketing &
-                SEO, Lifetime Maintenance & Support, and Branding & Design, are
-                tailored to propel your brand to new heights in the digital
-                realm.
+                Our diverse services, ranging from Web and App Development to
+                E-commerce and Digital Marketing, are tailored to propel your
+                brand to new heights in the digital realm.
               </p>
             </div>
           </div>

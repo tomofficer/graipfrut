@@ -104,11 +104,11 @@ export const HomeMainTitle = (props) => {
             </p>
             <div className='cta-btn-wrap flex-box d-flex align-items-center justify-content-center'>
               <Link
-                to='/'
+                to='/web-development'
                 className='btn cta-black-outline'
                 data-aos='fade-left'
                 data-aos-delay='50'>
-                <span>Get Started</span>
+                <span>Our Services</span>
               </Link>
               <Link
                 to='/contact-us'
