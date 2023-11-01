@@ -120,14 +120,9 @@ const Navigation = () => {
                 <li onClick={() => toggleMenu()}>
                   <Link to='/'>Home</Link>
                 </li>
-                <li onClick={() => toggleMenu()}>
-                  <Link to='/about'>About</Link>
-                </li>
-                <li onClick={() => toggleMenu()}>
-                  <Link to='/technology'>Technology</Link>
-                </li>
+
                 <li>
-                  <Link to=''>
+                  <Link to='/web-development'>
                     <span onClick={() => showMenu('services')}>Services</span>
                   </Link>
                   <div
@@ -148,7 +143,7 @@ const Navigation = () => {
                       <Link to='/web-development'>Web Development</Link>
                     </li>
                     <li>
-                      <Link to=''>
+                      <Link to='/android'>
                         <span onClick={() => showSubMenu('app')}>
                           App Development
                         </span>
@@ -184,7 +179,7 @@ const Navigation = () => {
                       <Link to='/digital-marketing'>Digital Marketing</Link>
                     </li>
                     <li>
-                      <Link to=''>
+                      <Link to='/magento'>
                         <span onClick={() => showSubMenu('commerce')}>
                           E-commerce
                         </span>
@@ -212,6 +207,12 @@ const Navigation = () => {
                       </ul>
                     </li>
                   </ul>
+                </li>
+                <li onClick={() => toggleMenu()}>
+                  <Link to='/technology'>Technology</Link>
+                </li>
+                <li onClick={() => toggleMenu()}>
+                  <Link to='/about'>About Us</Link>
                 </li>
                 <li onClick={() => toggleMenu()}>
                   {/* <Link to="/contact-us">Contact Us</Link> */}
