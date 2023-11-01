@@ -89,8 +89,9 @@ const About = () => {
           data-aos-delay='50'>
           <h2>Partner With Graipfrut</h2>
           <p>
-            Streamlining the Development Lifecycle : From Branding and Design to
-            Development and Marketing. <br />
+            We are a forward-thinking, AI-driven web development agency
+            dedicated to delivering digital excellence.
+            <br />
             We bring together the tools and technologies you need to plan,
             design, develop, and manage your digital projects effectively.
             {/* <br />
@@ -134,7 +135,8 @@ const About = () => {
                 </div>
                 <p data-aos='fade-up' data-aos-delay='50'>
                   We are an AI-driven web development agency dedicated to
-                  delivering digital excellence. We leverage the power of AI to
+                  delivering digital excellence. From Branding and Design to
+                  Development and Marketing, we leverage the power of AI to
                   create dynamic web solutions that not only enhance your online
                   presence but also optimize conversions and boost ROI. With
                   specialized teams in web development, app development,

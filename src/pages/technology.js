@@ -398,6 +398,21 @@ const Technology = () => {
         style={{ overflow: 'hidden' }}>
         <div className='container-fluid wd-container'>
           <div className='row flex-md-row-reverse'>
+            <div className='col-lg-6 col-md-6 col-12 position-relative'>
+              <img
+                data-aos='fade-down'
+                data-aos-delay='50'
+                src={require('../assets/img/technology4.png')}
+                className='img-fluid'
+                alt=''
+              />
+              {/* <div
+                className='bgImg'
+                style={{
+                  transform:
+                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
+                }}></div> */}
+            </div>
             <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
               <div className='ctn-box'>
                 <div className='sec-title line-left'>
@@ -421,21 +436,6 @@ const Technology = () => {
                   your success story.
                 </p>
               </div>
-            </div>
-            <div className='col-lg-6 col-md-6 col-12 position-relative'>
-              <img
-                data-aos='fade-down'
-                data-aos-delay='50'
-                src={require('../assets/img/technology4.png')}
-                className='img-fluid'
-                alt=''
-              />
-              {/* <div
-                className='bgImg'
-                style={{
-                  transform:
-                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
-                }}></div> */}
             </div>
           </div>
         </div>
