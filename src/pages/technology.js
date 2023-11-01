@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 // import SVGIMG from "../assets/img/technology/tools.svg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Whychooseus from '../components/Whychooseus';
+import WhyChooseUsImg from '../assets/img/technology5.jpg';
 const Technology = () => {
   const [pageTile] = useState({
     mainTitle: 'Technology',
@@ -20,6 +22,56 @@ const Technology = () => {
       once: true,
     });
   }, []);
+
+  const [windowTop, setWindowTop] = useState(0);
+  useEffect(() => {
+    window.addEventListener('scroll', function () {
+      setWindowTop(window.top.scrollY);
+    });
+  }, []);
+
+  const [whyChooseUsServices] = useState({
+    sectionTitle: 'Why Choose Us',
+    leftImg: WhyChooseUsImg,
+    data: [
+      {
+        id: 1,
+        title: 'Why Should You Partner With Us?',
+        description:
+          '<p>Partnering with us means gaining a dedicated ally focused on your success. We leverage our extensive experience, versatility in technologies, and a client-centric approach to empower your brand and drive tangible results.</p>',
+      },
+      {
+        id: 2,
+        title: 'What Sets Graipfrut Apart?',
+        description:
+          '<p>What sets Graipfrüt apart is our unwavering commitment to crafting digital excellence. We blend innovation, technical expertise, and a personalized approach to deliver tailored solutions that consistently exceed expectations.</p>',
+      },
+      {
+        id: 3,
+        title: "What's Our Approach To Web Development?",
+        description:
+          '<p>Our approach to web development revolves around four pillars: Discovery, Design, Development, and Ongoing Support. We begin by thoroughly understanding your goals, design user-centric experiences, build robust solutions, and provide continuous support to ensure long-term success.</p>',
+      },
+      {
+        id: 2,
+        title: 'How Do We Ensure Quality & Timely Delivery?',
+        description:
+          '<p>Quality and timeliness are at the core of our work. We maintain clear project scopes, adhere to industry best practices, and emphasize open communication to consistently deliver high-quality projects on time.</p>',
+      },
+      {
+        id: 2,
+        title: 'Why Trust Our Expertise In Programming Languages?',
+        description:
+          "<p>Our team's expertise spans a diverse range of programming languages, including React, Node.js, MongoDB, PHP, Python, Vue.js, Angular, JQuery, and Laravel. We leverage this expertise to select the perfect technology stack tailored to your project's unique requirements.</p>",
+      },
+      {
+        id: 2,
+        title: 'What Ongoing Support Can You Expect From Us?',
+        description:
+          "<p>Our commitment doesn't end at launch. We provide continuous support, monitoring, and updates to ensure your digital solution remains secure, up-to-date, and optimized for long-term success. Your ongoing success is our priority.</p>",
+      },
+    ],
+  });
   return (
     <>
       <Pagetitle pageTile={pageTile} />
@@ -29,7 +81,7 @@ const Technology = () => {
             className='sec-title text-center'
             data-aos='fade-down'
             data-aos-delay='50'>
-            <h2>Our Tools & Technologies</h2>
+            <h2>Tools & Technologies</h2>
             <p>
               Streamlining the Development Lifecycle : From Branding and Design
               to Development and Marketing. <br />
@@ -58,6 +110,55 @@ const Technology = () => {
             <div className='col-md-4'>
               <div className='mainImg secondImg'>
                 {/* <img src={require('../assets/img/technology/technology-child.jpg')} data-aos="fade-left" data-aos-delay="300" className="img-fluid" alt="" /> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className='our-mission section pt-100 pb-100'
+        style={{ overflow: 'hidden' }}>
+        <div className='container-fluid wd-container'>
+          <div className='row flex-md-row-reverse'>
+            <div className='col-lg-6 col-md-6 col-12 position-relative'>
+              <img
+                data-aos='fade-down'
+                data-aos-delay='50'
+                src={require('../assets/img/technology3.png')}
+                className='img-fluid'
+                alt=''
+              />
+              {/* <div
+                className='bgImg'
+                style={{
+                  transform:
+                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
+                }}></div> */}
+            </div>
+            <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
+              <div className='ctn-box'>
+                <div className='sec-title line-left'>
+                  <h2 data-aos='fade-down' data-aos-delay='50'>
+                    Explore Our Techstack
+                    <i class='fas fa-mobile-android-alt    '></i>
+                  </h2>
+                </div>
+                <div className='sub-title'>
+                  <h3 data-aos='fade-down' data-aos-delay='50'>
+                    A Techstack As Vast As Your Ambitions
+                  </h3>
+                </div>
+                <p data-aos='fade-up' data-aos-delay='50'>
+                  At Graipfrüt, your vision becomes our mission, where our
+                  seasoned development team is dedicated to bringing your
+                  digital vision to life. By choosing us, you gain access to a
+                  team that is well-versed in the latest industry trends and
+                  technologies, ensuring your projects are not only cutting-edge
+                  but also future-proof. Partnering with Graipfrüt means having
+                  a dedicated team that empowers your digital growth and helps
+                  you stay ahead in today's fast-paced digital landscape.
+                </p>
               </div>
             </div>
           </div>
@@ -292,6 +393,57 @@ const Technology = () => {
           </div>
         </div>
       </section>
+      <section
+        className='our-mission section pt-100 pb-100'
+        style={{ overflow: 'hidden' }}>
+        <div className='container-fluid wd-container'>
+          <div className='row flex-md-row-reverse'>
+            <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
+              <div className='ctn-box'>
+                <div className='sec-title line-left'>
+                  <h2 data-aos='fade-down' data-aos-delay='50'>
+                    We've Got You Covered
+                    <i class='fas fa-mobile-android-alt    '></i>
+                  </h2>
+                </div>
+                <div className='sub-title'>
+                  <h3 data-aos='fade-down' data-aos-delay='50'>
+                    No Matter The Project, We've Got You Covered
+                  </h3>
+                </div>
+                <p data-aos='fade-up' data-aos-delay='50'>
+                  At Graipfrüt, we boast a tech stack as vast as your digital
+                  ambitions. Our wide-ranging expertise spans cutting-edge
+                  technologies, ensuring that no matter your project's
+                  complexity, we've got the right tools in our arsenal to bring
+                  your vision to life. Partner with us to harness this diverse
+                  tech landscape, and let's build digital solutions that drive
+                  your success story.
+                </p>
+              </div>
+            </div>
+            <div className='col-lg-6 col-md-6 col-12 position-relative'>
+              <img
+                data-aos='fade-down'
+                data-aos-delay='50'
+                src={require('../assets/img/technology4.png')}
+                className='img-fluid'
+                alt=''
+              />
+              {/* <div
+                className='bgImg'
+                style={{
+                  transform:
+                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
+                }}></div> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      <Whychooseus
+        commonWhyChoose={whyChooseUsServices}
+        whyChooseClass={'web'}
+      />
     </>
   );
 };
