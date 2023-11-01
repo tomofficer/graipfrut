@@ -4,7 +4,7 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/technology/technology-child-1.jpg';
+import WhyChooseUsImg from '../assets/img/webdev2.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
