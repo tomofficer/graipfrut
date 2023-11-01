@@ -1812,6 +1812,7 @@ footer .copyright {
           box-shadow: 0px 0px 2px;
   min-width: 150px;
   color: var(--font-stl-one);
+  border: 1.5px solid black;
 }
 
 .ourapproach .opproach:hover {
