@@ -143,14 +143,11 @@ const About = () => {
             <h2 data-aos='fade-down' data-aos-delay='50'>
               What We Do
             </h2>
-            <p
-              data-aos='fade-up'
-              data-aos-delay='50'
-              style={{ padding: '0px 200px' }}>
+            <p data-aos='fade-up' data-aos-delay='50'>
               At Graipfrut, our expertise spans a wide spectrum of digital
-              services, from crafting visually stunning websites to developing
-              cutting-edge mobile apps. Discover how we can transform your ideas
-              into a digital empire.
+              services, from crafting visually stunning websites to developing{' '}
+              <br /> cutting-edge mobile apps. Discover how we can transform
+              your ideas into a digital empire.
             </p>
           </div>
           {services.map((service) => (
