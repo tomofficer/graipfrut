@@ -79,7 +79,7 @@ const Home = (data) => {
   const [mainTitle] = useState({
     title: 'Modern Web Experts',
     paragraph:
-      "We're a forward-thinking Web Development Agency that leverages the power of AI to provide dynamic web solutions unique to your business needs, delivering superior websites, webshops, and mobile apps.",
+      " Welcome to Graipfrut. We're a forward-thinking Web Development Agency that leverages the power of AI to provide top-quality Websites, Webshops and Mobile Apps.",
   });
 
   useEffect(() => {
@@ -194,7 +194,7 @@ const Home = (data) => {
           <div className='sec-title text-center'>
             <h2 data-aos='fade-right' data-aos-delay='50'>
               Shape Your Digital Future With{' '}
-              <span style={{ color: '#FFDC4D' }}>Graipfrut</span>
+              <span style={{ color: '#5ea1b2' }}>Graipfrut</span>
             </h2>
             <p data-aos='fade-left' data-aos-delay='50'>
               {/* <small> */}

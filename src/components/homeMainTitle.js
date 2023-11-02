@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import graipfrutLogo from '../assets/img/home/graipfrut-logo-yellow.png';
+import graipfrutLogo from '../assets/img/home/graipfrut-logo-white.png';
 
 export const HomeMainTitle = (props) => {
   useEffect(() => {
@@ -83,25 +83,44 @@ export const HomeMainTitle = (props) => {
               <img
                 src={graipfrutLogo}
                 alt='graipfrut-logo'
-                style={{ maxWidth: '200px' }}
+                style={{ maxWidth: '300px' }}
               />
             )}
 
-            <h1
-              data-aos='fade-up'
-              data-aos-delay='50'
-              // style={{
-              //   color: '#FFDC4D',
-              // }}
-            >
-              {props.data ? props.data.title : 'Loading'}
-            </h1>
-            <p
-              className='mr-auto ml-auto'
-              data-aos='fade-down'
-              data-aos-delay='50'>
-              {props.data ? props.data.paragraph : 'Loading'}
-            </p>
+            {isLargeScreen ? (
+              <h1
+                data-aos='fade-up'
+                data-aos-delay='50'
+                // style={{
+                //   color: '#FFDC4D',
+                // }}
+              >
+                {props.data ? props.data.title : 'Loading'}
+              </h1>
+            ) : (
+              <div></div>
+            )}
+
+            {isLargeScreen ? (
+              <p
+                className='mr-auto ml-auto'
+                data-aos='fade-down'
+                data-aos-delay='50'>
+                {props.data ? props.data.paragraph : 'Loading'}
+              </p>
+            ) : (
+              <p
+                className='mr-auto ml-auto'
+                data-aos='fade-down'
+                data-aos-delay='50'
+                // style={{
+                //   color: '#FFDC4D',
+                //   }}
+              >
+                {props.data ? props.data.paragraph : 'Loading'}
+              </p>
+            )}
+
             <div className='cta-btn-wrap flex-box d-flex align-items-center justify-content-center'>
               <Link
                 to='/web-development'

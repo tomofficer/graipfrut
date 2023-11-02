@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Pagetitle from '../components/Pagetitle';
 import { Link } from 'react-router-dom';
-
 // import SVGIMG from "../assets/img/technology/tools.svg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -396,6 +395,7 @@ const Technology = () => {
           </div>
         </div>
       </section>
+
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -443,6 +443,26 @@ const Technology = () => {
           </div>
         </div>
       </section>
+
+      <section className='lm-passion section d-flex align-items-center'>
+        <div className='container'>
+          <div className='sec-title text-center'>
+            <h2 data-aos='fade-down' data-aos-delay='50'>
+              Partner With <span style={{ color: '#5ea1b2' }}>Graipfrut</span>
+            </h2>
+            <p data-aos='fade-up' data-aos-delay='50'>
+              <small>
+                At Graipfrut, your vision becomes our mission. By partnering
+                with us you gain access to a team that is well-versed in the{' '}
+                <br />
+                latest industry trends and technologies, ensuring your projects
+                are not only cutting-edge but also future-proof.
+              </small>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <Whychooseus
         commonWhyChoose={whyChooseUsServices}
         whyChooseClass={'web'}

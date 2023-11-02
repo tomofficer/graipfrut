@@ -168,7 +168,7 @@ const WebDevelopment = () => {
         <div className='container'>
           <div className='sec-title text-center'>
             <h2 data-aos='fade-down' data-aos-delay='50'>
-              Partner With <span style={{ color: '#FFDC4D' }}>Graipfrut</span>
+              Partner With <span style={{ color: '#5ea1b2' }}>Graipfrut</span>
             </h2>
             <p data-aos='fade-up' data-aos-delay='50'>
               <small>

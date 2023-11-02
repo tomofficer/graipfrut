@@ -7,8 +7,8 @@ const BottomHero = () => {
   const [isHovered2, setIsHovered2] = useState(false);
 
   const divStyle2 = {
-    backgroundColor: isHovered2 ? 'black' : 'white',
-    color: isHovered2 ? '#FFDC4D' : 'black',
+    backgroundColor: isHovered2 ? '#5ea1b2' : 'white',
+    color: isHovered2 ? 'white' : 'black',
     border: 'none',
   };
 
@@ -39,7 +39,7 @@ const BottomHero = () => {
               typeSpeed={40}
               backSpeed={20}
               loop
-              style={{ color: '#FFDC4D' }}
+              style={{ color: '#5ea1b2' }}
             />
           </h3>
         </div>
