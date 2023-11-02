@@ -4,7 +4,7 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/webdev2.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -19,7 +19,7 @@ const WebDevelopment = () => {
     mainTitle: 'Web Development',
     pageClass: 'webDevelopment',
     subTitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      "We're more than just a web development agency; we're your trusted partner on the journey to building a powerful online presence that engages, captivates, and drives success for your business.",
   });
 
   const [textTitle] = useState({
@@ -127,7 +127,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -137,16 +137,16 @@ const WebDevelopment = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/webdev1.jpg')}
+                src={require('../assets/img/webdev3.png')}
                 className='img-fluid'
                 alt=''
               />
-              <div
+              {/* <div
                 className='bgImg'
                 style={{
                   transform:
                     'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
-                }}></div>
+                }}></div> */}
             </div>
             <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
               <div className='ctn-box'>

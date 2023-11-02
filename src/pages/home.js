@@ -113,6 +113,55 @@ const Home = (data) => {
                 digital marketing expertise.
               </p>
             </div>
+
+            <section
+              className='our-mission section pt-100 pb-100'
+              style={{ overflow: 'hidden' }}>
+              <div className='container-fluid wd-container'>
+                <div className='row flex-md-row-reverse'>
+                  <div className='col-lg-6 col-md-6 col-12 position-relative'>
+                    <img
+                      data-aos='fade-down'
+                      data-aos-delay='50'
+                      src={require('../assets/img/home/home1.png')}
+                      className='img-fluid'
+                      alt=''
+                    />
+                    {/* <div
+                className='bgImg'
+                style={{
+                  transform:
+                    'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
+                }}></div> */}
+                  </div>
+                  <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
+                    <div className='ctn-box' style={{ textAlign: 'left' }}>
+                      <div className='sec-title line-left'>
+                        <h2 data-aos='fade-down' data-aos-delay='50'>
+                          Modern Web Experts
+                        </h2>
+                      </div>
+                      <div className='sub-title'>
+                        <h3 data-aos='fade-down' data-aos-delay='50'>
+                          Navigating Success In The Digital World
+                        </h3>
+                      </div>
+                      <p data-aos='fade-up' data-aos-delay='50'>
+                        At Graipfrüt, we understand that success in the digital
+                        world requires more than just a website; it demands a
+                        strategic blend of innovation, expertise, and tailored
+                        solutions. From seamlessly integrating APIs for
+                        real-time data updates and crafting web applications
+                        that engage users at every click, to building custom
+                        websites that mirror your unique brand and optimizing
+                        e-commerce shops for maximum sales potential - we can
+                        bring your digital vision to life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           {homeServices.map((service, index) => (
             <div className='row home_services' key={service.id}>

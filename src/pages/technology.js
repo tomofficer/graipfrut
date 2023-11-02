@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/technology5.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 const Technology = () => {
   const [pageTile] = useState({
-    mainTitle: 'Technology',
+    mainTitle: 'Tools & Technologies',
     pageClass: 'technology',
     subTitle:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      ' We bring together the tools and technologies you need to plan, design, develop, and manage your digital projects effectively.',
     bgImg: '../assets/img/bg-main-title/about-bg.jpg',
   });
 
@@ -75,22 +76,22 @@ const Technology = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <section className='section lm-services bg pt-100 pb-50'>
+      {/* <section className='section lm-services bg pt-100 pb-50'>
         <div className='container wd-container'>
           <div
             className='sec-title text-center'
             data-aos='fade-down'
             data-aos-delay='50'>
-            <h2>Tools & Technologies</h2>
+            <h2>Partner With Graipfrut</h2>
             <p>
               Streamlining the Development Lifecycle : From Branding and Design
               to Development and Marketing. <br />
               We bring together the tools and technologies you need to plan,
               design, develop, and manage your digital projects effectively.
-              {/* <br />
+              <br />
               Partnering with Graipfrüt means having a dedicated team that
               empowers your digital growth and helps you stay ahead in today's
-              fast-paced digital landscape. */}
+              fast-paced digital landscape.
             </p>
           </div>
         </div>
@@ -98,23 +99,23 @@ const Technology = () => {
           <div className='row'>
             <div className='col-md-8'>
               <div className='mainImg firstImg'>
-                {/* <img
+                <img
                   src={require('../assets/img/technology/technology-child-1.jpg')}
                   data-aos='fade-left'
                   data-aos-delay='300'
                   className='img-fluid'
                   alt=''
-                /> */}
+                />
               </div>
             </div>
             <div className='col-md-4'>
               <div className='mainImg secondImg'>
-                {/* <img src={require('../assets/img/technology/technology-child.jpg')} data-aos="fade-left" data-aos-delay="300" className="img-fluid" alt="" /> */}
+                <img src={require('../assets/img/technology/technology-child.jpg')} data-aos="fade-left" data-aos-delay="300" className="img-fluid" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section
         className='our-mission section pt-100 pb-100'
@@ -125,7 +126,7 @@ const Technology = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/technology3.png')}
+                src={require('../assets/img/technology7.png')}
                 className='img-fluid'
                 alt=''
               />
@@ -402,7 +403,7 @@ const Technology = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/technology4.png')}
+                src={require('../assets/img/whyChooseUs1.png')}
                 className='img-fluid'
                 alt=''
               />

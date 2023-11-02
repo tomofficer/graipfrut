@@ -16,6 +16,7 @@ const Whychooseus = (commonWhyChoose) => {
           <div className='col-lg-6 col-md-6 col-12'>
             <div className='img-box' data-aos='fade-up' data-aos-delay='50'>
               <img
+                style={{ maxWidth: '600px' }}
                 src={commonWhyChoose.commonWhyChoose.leftImg}
                 className='img-fluid'
                 alt=''

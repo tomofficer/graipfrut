@@ -4,7 +4,8 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/magento2.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -16,10 +17,10 @@ const WebDevelopment = () => {
     });
   }, []);
   const [pageTile] = useState({
-    mainTitle: 'magento',
+    mainTitle: 'Magento Development',
     pageClass: 'Magento',
     subTitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Are you ready to take your e-commerce business to the next level? Partner with Graipfrüt for top-tier Magento development that transforms your online store into a sales powerhouse.',
   });
 
   const [textTitle] = useState({
@@ -126,7 +127,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>

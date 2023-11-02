@@ -4,7 +4,8 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/ios2.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -16,10 +17,10 @@ const WebDevelopment = () => {
     });
   }, []);
   const [pageTile] = useState({
-    mainTitle: '<span class="text-lowercase">i<span>OS',
-    pageClass: 'iOS',
+    mainTitle: '<span class="text-lowercase">i<span>OS Development',
+    pageClass: 'iOS Development',
     subTitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'We turn your concepts into mobile masterpieces. Join forces with us to create exceptional iOS apps that captivate your audience and drive success in the mobile world.',
   });
 
   const [textTitle] = useState({
@@ -114,7 +115,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -124,16 +125,16 @@ const WebDevelopment = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/ios1.jpg')}
+                src={require('../assets/img/ios1.png')}
                 className='img-fluid'
                 alt=''
               />
-              <div
+              {/* <div
                 className='bgImg'
                 style={{
                   transform:
                     'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
-                }}></div>
+                }}></div> */}
             </div>
             <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
               <div className='ctn-box'>

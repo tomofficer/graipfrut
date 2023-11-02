@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Pagetitle from '../components/Pagetitle';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import PagetitleAboutUs from '../components/PagtitleAboutUs';
 const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -16,7 +16,7 @@ const About = () => {
     pageClass: 'about-us',
     subTitle:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    bgImg: '../assets/img/home/graipfrutBg.jpg',
+    bgImg: '../assets/img/about/graiprut-hero2.jpg',
   });
 
   const [services] = useState([
@@ -41,6 +41,7 @@ const About = () => {
   ]);
 
   const [windowTop, setWindowTop] = useState(0);
+
   useEffect(() => {
     window.addEventListener('scroll', function () {
       setWindowTop(window.top.scrollY);
@@ -81,13 +82,13 @@ const About = () => {
 
   return (
     <>
-      <Pagetitle pageTile={pageTile} />
+      <PagetitleAboutUs pageTile={pageTile} />
       <div className='container wd-container'>
         <div
           className='sec-title text-center'
           data-aos='fade-down'
           data-aos-delay='50'>
-          <h2>Partner With Graipfrut</h2>
+          <h2>About Us</h2>
           <p>
             We are a forward-thinking, AI-driven web development agency
             dedicated to delivering digital excellence.
@@ -125,7 +126,7 @@ const About = () => {
               <div className='ctn-box'>
                 <div className='sec-title line-left'>
                   <h2 data-aos='fade-down' data-aos-delay='50'>
-                    About Us
+                    Partner With Graipfrut
                   </h2>
                 </div>
                 <div className='sub-title'>

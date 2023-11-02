@@ -4,7 +4,8 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/flutter2.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -16,10 +17,10 @@ const WebDevelopment = () => {
     });
   }, []);
   const [pageTile] = useState({
-    mainTitle: 'flutter',
+    mainTitle: 'Flutter Development',
     pageClass: 'flutter',
     subTitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Our expert Flutter developers craft robust, cross-platform apps that offer seamless user experiences, driving higher ROI and converting visitors into loyal customers.',
   });
 
   const [textTitle] = useState({
@@ -114,7 +115,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -124,16 +125,16 @@ const WebDevelopment = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/flutter1.jpg')}
+                src={require('../assets/img/flutter3.png')}
                 className='img-fluid'
                 alt=''
               />
-              <div
+              {/* <div
                 className='bgImg'
                 style={{
                   transform:
                     'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
-                }}></div>
+                }}></div> */}
             </div>
             <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
               <div className='ctn-box'>

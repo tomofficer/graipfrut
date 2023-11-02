@@ -12,11 +12,12 @@ const Pagetitle = (pageTile) => {
   return (
     <>
       <div id='pagetitle' className='page-info'>
-        {/* <div className='page-bg'>
+        <div className='page-bg'>
           <div className={`bg ${pageTile.pageTile.pageClass}`}></div>
-        </div> */}
-        <img
-          src={require('../assets/img/home/graipfrutBg.jpg')}
+        </div>
+
+        {/* <img
+          src={require('../assets/img/digitalmarketing1.jpg')}
           style={{
             position: 'absolute',
             top: 0,
@@ -25,6 +26,7 @@ const Pagetitle = (pageTile) => {
             zIndex: 1,
           }}
         />
+
         <img
           src={require('../assets/img/home/graipfrut-logo-yellow.png')}
           style={{
@@ -35,7 +37,7 @@ const Pagetitle = (pageTile) => {
             zIndex: 2,
             maxWidth: '300px',
           }}
-        />
+        /> */}
 
         <div className='info d-flex flex-column align-items-center justify-content-center text-center'>
           <h1

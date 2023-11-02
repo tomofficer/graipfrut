@@ -4,7 +4,8 @@ import TextTitle from '../components/TextTitle';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
-import WhyChooseUsImg from '../assets/img/wordpress1.jpg';
+import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -16,7 +17,7 @@ const WebDevelopment = () => {
     });
   }, []);
   const [pageTile] = useState({
-    mainTitle: 'Wordpress',
+    mainTitle: 'Wordpress Development',
     pageClass: 'wordress',
     subTitle:
       'Are you ready to take your e-commerce business to the next level? Partner with Graipfrüt for top-tier WordPress development that transforms your online store into a sales powerhouse.',
@@ -126,7 +127,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>

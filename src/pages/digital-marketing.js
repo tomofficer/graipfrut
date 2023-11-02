@@ -5,6 +5,7 @@ import DoWeWorks from '../components/DoWeWorks';
 import OurApproach2 from '../components/OurApproach2';
 import Whychooseus from '../components/Whychooseus';
 import WhyChooseUsImg from '../assets/img/digitalmarketing2.jpg';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const WebDevelopment = () => {
@@ -16,10 +17,10 @@ const WebDevelopment = () => {
     });
   }, []);
   const [pageTile] = useState({
-    mainTitle: 'Digital Marketing',
+    mainTitle: 'SEO & Digital Marketing',
     pageClass: 'digitalMarketing',
     subTitle:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'Digital Marketing is the cornerstone of modern business success. Our expertise in SEO, content marketing, social media strategies, and paid advertising empowers your brand to thrive.',
   });
 
   const [textTitle] = useState({
@@ -125,7 +126,7 @@ const WebDevelopment = () => {
   return (
     <>
       <Pagetitle pageTile={pageTile} />
-      <TextTitle textTitleServices={textTitle} />
+      {/* <TextTitle textTitleServices={textTitle} /> */}
       <section
         className='our-mission section pt-100 pb-100'
         style={{ overflow: 'hidden' }}>
@@ -135,16 +136,16 @@ const WebDevelopment = () => {
               <img
                 data-aos='fade-down'
                 data-aos-delay='50'
-                src={require('../assets/img/digitalmarketing1.jpg')}
+                src={require('../assets/img/digitalmarketing3.png')}
                 className='img-fluid'
                 alt=''
               />
-              <div
+              {/* <div
                 className='bgImg'
                 style={{
                   transform:
                     'translate3d(0px, ' + (-80 + windowTop / 5) + 'px , 0px)',
-                }}></div>
+                }}></div> */}
             </div>
             <div className='col-lg-6 col-md-6 col-12 d-flex align-items-center'>
               <div className='ctn-box'>
