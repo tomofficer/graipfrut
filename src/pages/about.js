@@ -60,24 +60,10 @@ const About = () => {
     setIsHovered1(false);
   };
 
-  const handleMouseEnter2 = () => {
-    setIsHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setIsHovered2(false);
-  };
-
   const divStyle1 = {
     backgroundColor: isHovered1 ? 'black' : 'white',
     color: isHovered1 ? 'white' : 'black',
     border: '3px solid black',
-  };
-
-  const divStyle2 = {
-    backgroundColor: isHovered2 ? 'black' : 'white',
-    color: isHovered2 ? 'white' : 'black',
-    border: 'none',
   };
 
   return (
@@ -251,33 +237,6 @@ const About = () => {
                   reality.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='get-started section'>
-        <div className='container d-flex align-items-center justify-content-center'>
-          <div className='box-container'>
-            <div className='sec-title wt text-center'>
-              <h2 data-aos='fade-down' data-aos-delay='50'>
-                Have Questions?
-              </h2>
-              <p data-aos='fade-up' data-aos-delay='50'>
-                If you're curious about how we can help or have any questions
-                about our services, don't hesitate to contact us. We're
-                committed to delivering the information and support you need.
-              </p>
-              <Link
-                to='/contact-us'
-                data-aos='fade-down'
-                data-aos-delay='50'
-                className='btn cta-black-outline'
-                style={divStyle2}
-                onMouseEnter={handleMouseEnter2}
-                onMouseLeave={handleMouseLeave2}>
-                Contact Us
-              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Pagetitle from '../components/Pagetitle';
 import TextTitle from '../components/TextTitle';
+import Typed from 'react-typed';
+import { Link } from 'react-router-dom';
 import DoWeWorks from '../components/DoWeWorks';
 import OurApproach from '../components/OurApproach';
 import Whychooseus from '../components/Whychooseus';
@@ -123,6 +125,23 @@ const WebDevelopment = () => {
       setWindowTop(window.top.scrollY);
     });
   }, []);
+
+  //button style change handle
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const divStyle2 = {
+    backgroundColor: isHovered2 ? 'black' : 'white',
+    color: isHovered2 ? '#FFDC4D' : 'black',
+    border: 'none',
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
 
   return (
     <>

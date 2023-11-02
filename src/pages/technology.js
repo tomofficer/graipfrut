@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Pagetitle from '../components/Pagetitle';
 import { Link } from 'react-router-dom';
+
 // import SVGIMG from "../assets/img/technology/tools.svg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -73,6 +74,7 @@ const Technology = () => {
       },
     ],
   });
+
   return (
     <>
       <Pagetitle pageTile={pageTile} />

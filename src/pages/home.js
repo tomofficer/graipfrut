@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Typed from 'react-typed';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { HomeMainTitle } from '../components/homeMainTitle';
@@ -256,29 +255,6 @@ const Home = (data) => {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className='lm-hm-talk'>
-        <div className='container text-center'>
-          <h3 className='h2 pt-3'>
-            We've got you covered:
-            <br />{' '}
-            <Typed
-              strings={[
-                'Web Development',
-                'Mobile App Development',
-                'E-Commerce Development',
-                'Frontend Development',
-                'Backend Development',
-                'UI/UX Design',
-                'SEO & Digital Marketing',
-              ]}
-              typeSpeed={40}
-              backSpeed={20}
-              loop
-            />
-          </h3>
         </div>
       </section>
     </div>
