@@ -16,7 +16,7 @@ const PagetitleAboutUs = (pageTile) => {
           <div className={`bg ${pageTile.pageTile.pageClass}`}></div>
         </div>
 
-        <img
+        {/* <img
           src={require('../assets/img/home/graipfrutBg.jpg')}
           style={{
             position: 'absolute',
@@ -25,7 +25,7 @@ const PagetitleAboutUs = (pageTile) => {
             width: '100%',
             zIndex: 1,
           }}
-        />
+        /> */}
 
         <img
           src={require('../assets/img/home/graipfrut-logo-white.png')}
@@ -35,11 +35,11 @@ const PagetitleAboutUs = (pageTile) => {
             left: '50%',
             transform: 'translate(-50%, -50%)', // Centers the image
             zIndex: 2,
-            maxWidth: '400px',
+            maxWidth: '300px',
           }}
         />
 
-        <div className='info d-flex flex-column align-items-center justify-content-center text-center'>
+        {/* <div className='info d-flex flex-column align-items-center justify-content-center text-center'>
           <h1
             data-aos='fade-up'
             data-aos-delay='50'
@@ -52,7 +52,7 @@ const PagetitleAboutUs = (pageTile) => {
             data-aos-delay='300'>
             <p> {pageTile.pageTile.subTitle}</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
