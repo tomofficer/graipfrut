@@ -35,7 +35,7 @@ const PagetitleAboutUs = (pageTile) => {
             left: '50%',
             transform: 'translate(-50%, -50%)', // Centers the image
             zIndex: 2,
-            maxWidth: '300px',
+            maxWidth: '400px',
           }}
         />
 
