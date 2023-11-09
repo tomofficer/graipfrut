@@ -138,7 +138,8 @@ export const HomeMainTitle = (props) => {
                 <span>Our Services</span>
               </Link>
               <Link
-                to='/contact-us'
+                to='https://calendly.com/tomofficer/30-minute-consultation'
+                target='_blank'
                 className='btn cta-black-outline'
                 data-aos='fade-right'
                 data-aos-delay='50'>

@@ -58,7 +58,8 @@ const BottomHero = () => {
                 committed to delivering the information and support you need.
               </p>
               <Link
-                to='/contact-us'
+                to='https://calendly.com/tomofficer/30-minute-consultation'
+                target='_blank'
                 data-aos='fade-down'
                 data-aos-delay='50'
                 className='btn cta-black-outline'
