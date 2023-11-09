@@ -77,7 +77,7 @@ export const HomeMainTitle = (props) => {
               <img
                 src={graipfrutLogo}
                 alt='graipfrut-logo'
-                style={{ maxWidth: '400px' }}
+                style={{ maxWidth: '250px' }}
               />
             ) : (
               <img
@@ -91,10 +91,13 @@ export const HomeMainTitle = (props) => {
               <h1
                 data-aos='fade-up'
                 data-aos-delay='50'
-                // style={{
-                //   color: '#FFDC4D',
-                // }}
-              >
+                style={{
+                  fontSize: '55px',
+                  color: 'white',
+                  marginTop: '20px',
+                  paddingLeft: '200px',
+                  paddingRight: '200px',
+                }}>
                 {props.data ? props.data.title : 'Loading'}
               </h1>
             ) : (

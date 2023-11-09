@@ -77,9 +77,10 @@ const Home = (data) => {
   ]);
 
   const [mainTitle] = useState({
-    title: 'Modern Web Experts',
+    title:
+      'Senior Software Engineers Developing Custom Websites, Webshops & Mobile Apps',
     paragraph:
-      " Welcome to Graipfrut. We're a forward-thinking Web Development Agency that leverages the power of AI to provide top-quality Websites, Webshops and Mobile Apps.",
+      "Empowering Startups, SMB's and Enterprise Companies with custom, affordable, top-quality web solutions. We leverage the power of Ai to ensure your project is delivered affordably and quickly.",
   });
 
   useEffect(() => {
