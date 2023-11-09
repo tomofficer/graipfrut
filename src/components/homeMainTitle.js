@@ -97,6 +97,7 @@ export const HomeMainTitle = (props) => {
                   marginTop: '20px',
                   paddingLeft: '200px',
                   paddingRight: '200px',
+                  fontFamily: 'Poppins',
                 }}>
                 {props.data ? props.data.title : 'Loading'}
               </h1>
@@ -108,7 +109,11 @@ export const HomeMainTitle = (props) => {
               <p
                 className='mr-auto ml-auto'
                 data-aos='fade-down'
-                data-aos-delay='50'>
+                data-aos-delay='50'
+                style={{
+                  fontFamily: 'Montserrat',
+                  fontSize: '18px',
+                }}>
                 {props.data ? props.data.paragraph : 'Loading'}
               </p>
             ) : (

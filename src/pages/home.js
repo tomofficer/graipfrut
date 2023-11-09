@@ -80,7 +80,7 @@ const Home = (data) => {
     title:
       'Senior Software Engineers Developing Custom Websites, Webshops & Mobile Apps',
     paragraph:
-      "Empowering Startups, SMB's and Enterprise Companies with custom, affordable, top-quality web solutions. We leverage the power of Ai to ensure your project is delivered affordably and quickly.",
+      "Empowering Startups, SMB's and Enterprise Companies with top-quality web solutions. We leverage the power of Ai to ensure your project is delivered affordably and quickly.",
   });
 
   useEffect(() => {
